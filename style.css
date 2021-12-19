@@ -1,0 +1,60 @@
+* {
+	/*CSS Syntax*/
+	/*CSS Property: Value*/
+	font-family: 'Roboto', sans-serif;	
+}
+
+h1, h2 {
+	padding-top: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+}
+
+#landing {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+#gallery {
+	height: 75vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 6px;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+h2 {
+	color: #007BFF;
+}
+
+.tools {
+	padding: 5px;
+	height: 210px;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	width: 75%;
+	border: 5px solid #F2F2F2;
+	color: white;
+	font-size: 12px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
