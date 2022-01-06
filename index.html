@@ -19,34 +19,350 @@
 </head>
 <body>
 	<!-- Navbar Section -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mx-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#landing">Home </a>
-	      </li>
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#gallery">Gallery</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>	
+	<nav id="navBar" class="navbar navbar-expand-lg navbar-light">
+		<div class="container-fluid">
+		  <a id="header-title" class="navbar-brand" href="#about-me-img">
+			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-circle" viewBox="0 0 19 19">
+				<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+			</svg>
+			Justin.</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<span class="navbar-text ml-auto">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#Landing">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#certificates">Achievements</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#work_experience">Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#skills">Skills</a>
+				</li>
+				</ul>
+			</span>
+		  </div>
+		</div>
+	</nav>
+	<hr id="border-nav">
 	<!-- Creates a container for our layout -->
 	<div class="container-fluid">
 		<!-- Indentation: To keep code clean, 
 		make sure to indent any child tags within 
 		their parent tags -->
-		<section id="Landing" class="jumbotron text-center mt-3">
-			<h1>Full Stack Web Developer</h1>
-			<p>Hi! My name is Justin and I love programming.</p> 
-			<img class="img-fluid" src="images/nike-mag.jpg"/>
+		<section id="Landing" class="jumbotron text-left mt-3">
+			<h1>I'm John Justin Berdin, a</h1>
+			<h1 id="position"> developer.</h1>
+			<span class="d-inline-block text-trunctate font-italic" style="max-width: 580px;">Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+				voluptatum cum possimus ducimus. Eum natus animi ut eius magnam ut magni dolorem 
+				est facilis libero.
+			</span>
+			<br><br>
+			<a id="contact" type="button" class="btn btn-primary btn-lg" href="#contact-me">contact me</a>
+			<a type="button" class="btn btn-light btn-lg" href="#Specializes">browse portfolio</a>
+			<br>
+			<!-- social media buttons -->
+			<a id="github" type="button" class="btn btn-outline-dark" href="https://www.github.com/CodeGrinder123">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+					<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+				</svg>
+			</a>
+			<a id="stackoverflow" type="button" class="btn btn-outline-dark" href="https://stackoverflow.com/users/12395434/codegrinder">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stack-overflow" viewBox="0 0 16 16">
+					<path d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z"/>
+					<path d="M3.857 13.145h7.137v-1.428H3.857v1.428zM10.254 0 9.108.852l4.26 5.727 1.146-.852L10.254 0zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013-.603 1.294zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468-.294 1.397z"/>
+				</svg>
+			</a>
+			<a id="instagram" type="button" class="btn btn-outline-dark" href="https://www.instagram.com/tatinberds/">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+					<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+				</svg>
+			</a>
+			<a id="facebook" type="button" class="btn btn-outline-dark" href="https://www.facebook.com/john.berdin.14/">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+					<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+				</svg>
+			</a>
+			<img class="img-fluid float-right" src="images/me-2.png"/>
 		</section>
+		
+		<br><br>
+		<div id="special" class="p-3 mb-2 bg-dark text-white rounded">
+			<br>
+			<div class="head-div">
+				<h1 id="Specializes" class="text-center">Specializes In</h1>
+				<span id="header-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+					Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+					voluptatum cum possimus ducimus.
+				</span>
+				<hr>
+			</div>
+			<br>
+			<div class="row">
+				<div id="coding" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+						<path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+					</svg>
+					<h3 class="text-start">Coding</h3>
+					<span id="code-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+						voluptatum cum possimus ducimus. Eum natus animi ut eius magnam ut magni dolorem 
+						est facilis libero.
+					</span>
+				</div>
+				<div id="design" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-palette" viewBox="0 0 16 16">
+						<path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+						<path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"/>
+					</svg>
+					<h3 class="text-start">Creative design</h3>
+					<span id="design-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+						voluptatum cum possimus ducimus. Eum natus animi ut eius magnam ut magni dolorem 
+						est facilis libero.
+					</span>
+				</div>
+				<div id="database" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+						<path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+					</svg>
+					<h3 class="text-start">Database</h3>
+					<span id="database-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+						voluptatum cum possimus ducimus. Eum natus animi ut eius magnam ut magni dolorem 
+						est facilis libero.
+					</span>
+				</div>
+			</div>
+			<br><br>
+		</div>
+		<!-- about me -->
+		<div id="img-div" class="col-6 col-md-4">
+			<img id="about-me-img" class="float-right" src="images/IMG_0102-1.jpg"/>
+		</div>
+		<div id="about-me" class="col-md-6 mb-3 bg-light text-dark">
+			<section id="Landing" class="jumbotron text-left mt-3">
+				<hr id="about-me-border">
+				<h1 id="about-me-text" class="text-start">About me</h1>
+					<span id="database-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+						voluptatum cum possimus ducimus. Eum natus animi ut eius magnam ut magni dolorem 
+						est facilis libero.
+					</span>
+			</section>
+		</div>
+		<br><br><br>
+		<br><br><br>
+		<br>
+		<!-- Certificates -->
+		<div id="certs" class="p-3 mb-2 bg-dark text-white rounded">
+			<br>
+			<div class="head-div">
+				<h1 id="certificates" class="text-center">Certificates</h1>
+				<span id="header-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+					Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+					voluptatum cum possimus ducimus.
+				</span>
+				<hr>
+			</div>
+			<br>
+			<!-- 1st row -->
+			<div class="row-1">
+				<div id="item-1" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+						<path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+					</svg>
+					<h3 class="text-start">Programming for Everybody <br>(Python)</h3>
+					<span id="item_1-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						University Of Michigan <br> 2021 December
+					</span>
+				</div>
+				<div id="item-2" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+						<path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+					</svg>
+					<h3 class="text-start">Introduction to User Interface and <br> User Experience</h3>
+					<span id="item_2-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						Great Learning Academy <br> 2021 December
+					</span>
+				</div>
+				<div id="item-3" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+						<path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+					</svg>
+					<h3 class="text-start">Code-UP: <br> Coding and Web Profile Creation <br> using HTML,CSS, and Bootstrap</h3>
+					<span id="item_3-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						UP Sigma Rho Fraternity & ZUITT <br> 2021 December
+					</span>
+				</div>
+			</div>
+			<br>
+			<!-- 2nd row -->
+			<div class="row-2">
+				<div id="item-1" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+						<path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+					</svg>
+					<h3 class="text-start">Python Data Structures</h3>
+					<span id="item_1-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						Great Learning Academy <br> 2021 December
+					</span>
+				</div>
+				<div id="item-2" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+						<path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+					</svg>
+					<h3 class="text-start">CCNA Routing and Switching: Introduction to Networks.</h3>
+					<span id="item_2-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						CISCO & Ateneo de Naga University <br> 2019 November
+					</span>
+				</div>
+				<div id="item-3" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+						<path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+					</svg>
+					<h3 class="text-start">COMELEC: IT Support</h3>
+					<span id="item_3-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						Commission on Elections <br> 2019 May
+					</span>
+				</div>
+			</div>
+			<br><br>
+		</div>
 
-		<section id="gallery" class="text-center bg-dark">
+		<!-- work experience -->
+		<br>
+			<div class="head-div">
+				<h1 id="work_experience" class="text-center">Work Experience</h1>
+				<span id="header-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+					Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+					voluptatum cum possimus ducimus.
+				</span>
+				<hr>
+			</div>
+		<br>
+		<div id="camera-div" class="col-12 col-md-8">>
+			<img id="photo-img" class="float-right" src="images/IMG_0552.jpg"/>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br>
+		<div id="photo" class="col-md-6 mb-3 bg-light text-dark">
+			<section id="Landing" class="jumbotron text-left mt-3">
+				<hr id="photo-me-border">
+				<div id="text-work-1">
+					<h1 id="photo-me-text" class="text-start">Freelance Photographer</h1>
+						<span id="photo-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+							Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+							voluptatum cum possimus ducimus. Eum natus animi ut eius magnam ut magni dolorem 
+							est facilis libero.
+						</span>
+				</div>
+			</section>
+		</div>
+
+		<div id="camera-div" class="col-12 col-md-8">>
+			<img id="photo-img" class="float-right" src="images/it_staff.jpg"/>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<div id="photo" class="col-md-6 mb-3 bg-light text-dark">
+			<section id="Landing" class="jumbotron text-left mt-3">
+				<hr id="photo-me-border">
+				<div id="text-work-1">
+					<h1 id="photo-me-text" class="text-start">Comelec IT Support</h1>
+						<span id="photo-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+							Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+							voluptatum cum possimus ducimus. Eum natus animi ut eius magnam ut magni dolorem 
+							est facilis libero.
+						</span>
+				</div>
+			</section>
+		</div>
+		<!-- skills -->
+		<div id="skills" class="p-3 mb-2 bg-dark text-white rounded">
+			<br>
+			<div class="head-div">
+				<h1 class="text-center">Skills</h1>
+				<span id="header-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+					Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+					voluptatum cum possimus ducimus.
+				</span>
+				<hr>
+			</div>
+			<br>
+			<div class="row">
+				<div id="design" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16">
+						<path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+						<path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+					  </svg>
+					<h3 class="text-start">Photography & Videography</h3>
+					<span id="design-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+						voluptatum cum possimus ducimus. Eum natus animi ut eius magnam ut magni dolorem 
+						est facilis libero.
+					</span>
+				</div>
+				<div id="coding" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+						<path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+					</svg>
+					<h3 class="text-start">Programming</h3>
+					<span id="code-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+						voluptatum cum possimus ducimus. Eum natus animi ut eius magnam ut magni dolorem 
+						est facilis libero.
+					</span>
+				</div>
+				<div id="database" class="col-6 col-md-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+						<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+						<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+					</svg>
+					<h3 class="text-start">Keen Eye For Design</h3>
+					<span id="database-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+						voluptatum cum possimus ducimus. Eum natus animi ut eius magnam ut magni dolorem 
+						est facilis libero.
+					</span>
+				</div>
+			</div>
+			<br><br>
+		</div>
+		<!-- contact me -->
+		<br>
+			<div class="head-div">
+				<h1 id="contact-me" class="text-center">Send me an email</h1>
+				<span id="database-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+					Lorem ipsum dolor sit amet. Et deserunt illo sed sunt tenetur a perspiciatis 
+					voluptatum cum possimus ducimus. Eum natus animi ut eius magnam ut magni dolorem 
+					est facilis libero.
+				</span>
+				<hr>
+				<br>
+				<a href="mailto:tatinberds@gmail.com" id="email-link">
+					<svg id="email" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+						<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+					</svg>
+					<span id="header-text" class="d-inline-block text-trunctate font-normal" style="max-width: 580px;">
+						&nbsp;&nbsp; tatinberds@gmail.com
+					</span>
+				</a>
+			</div>
+		<br>
+		<div id="skills" class="p-3 mb-2 bg-dark text-white rounded">
+			<br>
+				<span id="code-text" class="d-inline-block text-trunctate font-normal float-right" style="max-width: 580px;">
+					©Berdin, John Justin M.
+				</span>
+			<br>
+		</div>
+		<!-- <section id="gallery" class="text-center bg-dark">
 			<div class="tools">
 				<h2>Languages I Speak</h2>
 					<ul>
@@ -65,7 +381,7 @@
 						<li>VScode</li>
 					</ul>
 			</div>
-		</section>
+		</section> -->
 	</div>
 
 	 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
