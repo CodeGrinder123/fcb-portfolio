@@ -347,6 +347,28 @@ h3{
 	align-content: center;
 }
 
+/* Achievements */
+#achievements-img{
+	display: block;
+	border-radius: 250px;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+    height: 200px;
+    width: auto;
+}
+
+#books-img{
+	margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+	margin-right: auto;
+    height: 200px;
+    width: auto;
+	box-shadow: 5px 5px 5px #333;
+}
+
 @media screen and (max-width: 550px){
 	#about-me-img, #Landing, #photo-img {
 		width: auto;
