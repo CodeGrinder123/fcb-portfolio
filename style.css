@@ -369,6 +369,28 @@ h3{
 	box-shadow: 5px 5px 5px #333;
 }
 
+#ass-img{
+	display: block;
+	border-radius: 250px;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+    height: 100px;
+    width: 50x;
+}
+
+#asscircle-img{
+	display: block;
+	border-radius: 50%;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+    height: 100px;
+	width: auto;
+}
+
 @media screen and (max-width: 550px){
 	#about-me-img, #Landing, #photo-img {
 		width: auto;
