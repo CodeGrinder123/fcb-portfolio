@@ -327,6 +327,7 @@ h3{
 #email-link{
 	text-decoration: none;
 	color: black;
+	text-align: center;
 }
 
 /* Head */
@@ -389,6 +390,21 @@ h3{
 	margin-right: auto;
     height: 100px;
 	width: auto;
+}
+
+/* References */
+#ref-links{
+	text-decoration: none;
+	color: black
+}
+
+#hr-ref{
+	display: block;
+	background-color: #8c52ff;
+	width: 5%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	align-content: center;
 }
 
 @media screen and (max-width: 550px){
